@@ -1,0 +1,97 @@
+{
+  "feed": [
+    {
+      "_id": "1",
+      "userId": "user-1",
+      "status": "This is an example status. Isn't it great?!",
+      "publishedAt": "2019-09-12T15:52:01.169Z",
+      "parentStatusId": null
+    },
+    {
+      "_id": "t-1",
+      "userId": "user-1",
+      "status": "This is an example response, which is really just a status with a parent. Isn't it great?!",
+      "publishedAt": "2019-09-12T15:52:01.169Z",
+      "parentStatusId": "1"
+    },
+    {
+      "_id": "bW24nVGq",
+      "userId": "user-2",
+      "status": "hello!",
+      "publishedAt": "2019-11-12T00:13:19.546Z"
+    },
+    {
+      "_id": "Te0W5uch",
+      "userId": "user-2",
+      "status": "Test",
+      "publishedAt": "2019-11-19T19:14:20.752Z"
+    },
+    {
+      "_id": "gmr7CI6i",
+      "userId": "user-2",
+      "status": "Hi",
+      "publishedAt": "2019-11-19T19:16:04.540Z",
+      "parentStatusId": "Te0W5uch"
+    },
+    {
+      "_id": "5O3eDvE0",
+      "userId": "user-2",
+      "status": "This is a test status",
+      "publishedAt": "2019-11-20T16:06:34.100Z"
+    },
+    {
+      "_id": "PHo4bzSv",
+      "userId": "user-2",
+      "status": "Hey here is my pic www.google.com",
+      "publishedAt": "2019-11-21T15:14:43.919Z"
+    },
+    {
+      "_id": "aDWzZWee",
+      "userId": "user-2",
+      "status": "Hey..  Have a look at my new pic https://lh3.googleusercontent.com/proxy/MPj0Wd76RYzjWr4Xn72V4ZwOy0n1wQR6oCpQ0qKaj2xW5tPj_Ic_4j7KNsCbW20bFhzVfZ6DVO2tWTmjzmFnfIu23tBN5XixWw=w444-h331",
+      "publishedAt": "2019-11-21T15:18:33.567Z"
+    },
+    {
+      "_id": "OLnOU9Y4",
+      "userId": "user-2",
+      "status": "And here is mine www.facebook.com",
+      "publishedAt": "2019-11-21T15:31:56.827Z",
+      "parentStatusId": "PHo4bzSv"
+    }
+  ],
+  "users": [
+    {
+      "_id": "user-1",
+      "avatarUri": "https://picsum.photos/id/237/200",
+      "name": "Jane Doe",
+      "username": "@jane_doe"
+    },
+    {
+      "_id": "user-2",
+      "avatarUri": "https://picsum.photos/id/238/200",
+      "name": "John Doe",
+      "username": "@john_doe"
+    }
+  ],
+  "likes": {
+    "user-2": {
+      "1": true,
+      "bW24nVGq": true,
+      "t-1": true,
+      "Te0W5uch": true,
+      "OLnOU9Y4": true,
+      "aDWzZWee": true,
+      "5O3eDvE0": true
+    }
+  },
+  "dislikes": {
+    "user-2": {
+      "1": false,
+      "bW24nVGq": false,
+      "Te0W5uch": true,
+      "t-1": true,
+      "5O3eDvE0": false,
+      "PHo4bzSv": true
+    }
+  }
+}
